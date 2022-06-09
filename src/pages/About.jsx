@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useState, useEffect } from "react";
 
 function About(props) {
+
+    
+
   return (
     <div>About</div>
   )
