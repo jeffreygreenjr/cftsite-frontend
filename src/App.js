@@ -14,16 +14,20 @@ import Fighters from "./pages/Fighters";
 import Shop from "./pages/Shop";
 
 function App() {
+
+  // HEROKU URL FOR MY BACKEND
+  const URL = "https://cftsite-backend.herokuapp.com/"
+
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route exact path="/" element={< Home />} />
-        <Route exact path="/about" element={< About />} />
-        <Route exact path="/classes" element={< Classes />} />
-        <Route exact path="/coachingstaff" element={< Coaches />} />
-        <Route exact path="/fighters" element={< Fighters />} />
-        <Route exact path="/shop" element={< Shop />} />
+        <Route exact path="/about" element={< About URL={URL} />} />
+        <Route exact path="/classes" element={< Classes URL={URL} />} />
+        <Route exact path="/coachingstaff" element={< Coaches URL={URL} />} />
+        <Route exact path="/fighters" element={< Fighters URL={URL} />} />
+        <Route exact path="/shop" element={< Shop URL={URL} />} />
       </Routes>
       <Footer />
     </div>
