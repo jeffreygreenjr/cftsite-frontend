@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 function Classes(props) {
 
+    // CREATE STATE TO HOLD CLASS DATA
     const [classes, setClasses] = useState([])
 
     const getClassesData = async () => {
