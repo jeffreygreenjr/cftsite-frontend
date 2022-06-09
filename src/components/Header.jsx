@@ -1,38 +1,31 @@
+import "../styles/Header.css"
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
 
-    // INLINK STYLE FOR THE NAV TAG
-    const navStyle = {
-        display: "flex",
-        justifyContent: "space-around",
-        border: "3px solid black",
-        padding: "8px",
-        width: "90%",
-        margin: "auto",
-    };
-
   return (
     <header>
-        <h1>Chicago Fight Team</h1>
-        <nav style={navStyle}>
-            <Link to="/">
+        <div className="HeaderLogoContainer">
+            <img className="CFT-headerlogo" src="https://i.imgur.com/EQDB1gh.png" alt="CFTtextlogo"></img>
+        </div>
+        <nav className="navBar">
+            <Link className="NavLinks" to="/">
             <div>HOME</div>
             </Link>
-            <Link to="/about">
+            <Link className="NavLinks" to="/about">
             <div>ABOUT</div>
             </Link>
-            <Link to="/classes">
+            <Link className="NavLinks" to="/classes">
             <div>CLASSES</div>
             </Link>
-            <Link to="/coachingstaff">
+            <Link className="NavLinks" to="/coachingstaff">
             <div>COACHES</div>
             </Link>
-            <Link to="/fighters">
+            <Link className="NavLinks" to="/fighters">
             <div>FIGHTERS</div>
             </Link>
-            <Link to="/shop">
+            <Link className="NavLinks" to="/shop">
             <div>SHOP</div>
             </Link>
         </nav>
