@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 
 function Header(props) {
 
+    const header = document.querySelector('.header') 
+
   return (
-    <header>
+    <div className="header">
         <div className="HeaderLogoContainer">
             <img className="CFT-headerlogo" src="https://i.imgur.com/EQDB1gh.png" alt="CFTtextlogo"></img>
         </div>
@@ -29,7 +31,7 @@ function Header(props) {
             <div>SHOP</div>
             </Link>
         </nav>
-    </header>
+    </div>
   )
 }
 

@@ -1,3 +1,4 @@
+import "../styles/Coach.css"
 import React from 'react';
 import { useState, useEffect } from "react";
 
@@ -19,19 +20,23 @@ function Coaches(props) {
 
     const loadCoaches = coaches.map((coach, idx) => {
         return (
-            <div className="CoachList" key={idx}>
+            <div className="CoachCard" key={idx}>
                 <h2>{coach.name}</h2>
-                <h3>{`Classes: ${coach.teaches}`}</h3>
-                <h4>{`Belt: ${coach.belt}`}</h4>
                 <img className="coach-images" src={coach.image} alt={coach.name}></img>
+                <div className="coach-body">
+                    <h3>{`Classes: ${coach.teaches}`}</h3>
+                    <h4>{`Belt: ${coach.belt}`}</h4>
+                </div>
             </div>
         )
     })
 
   return (
-    <div>
-        <h1>Coaching Staff</h1>
-        {loadCoaches}
+    <div className="CoachesPage">
+        <h1>COACHING STAFF</h1>
+        <div className ="CoachContainer">
+            {loadCoaches}
+        </div>
     </div>
   )
 }

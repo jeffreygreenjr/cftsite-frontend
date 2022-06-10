@@ -1,11 +1,30 @@
 .HomePage {
+    margin-top: 150px;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .HomePageLogo {
-    height: 100%;
+    max-width: 70vw;
+    max-height: 75vh;
+}
+
+/* -----MEDIA QUERY (PHONE)----- */
+@media screen and (max-width: 600px) {
+
+    .HomePage {
+        margin-top: 150px;
+        height: 78vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomePageLogo {
+        width: 100%;
+    }
 }

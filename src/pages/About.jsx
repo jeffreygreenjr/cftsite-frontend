@@ -1,3 +1,4 @@
+import "../styles/About.css"
 import React from 'react';
 import { useState, useEffect } from "react";
 
@@ -19,6 +20,7 @@ function About(props) {
 
     const loadAbout = () => (
         <div className="AboutInfo">
+            <img className="AboutPhoto" src="https://i.imgur.com/dr5bFlc.jpeg" alt="CFT-Team-Photo"></img>
             <h2>{about.name}</h2>
             <h3>{`Founded in ${about.founded}`}</h3>
             <h4>{about.address}</h4>

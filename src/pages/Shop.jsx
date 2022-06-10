@@ -1,3 +1,4 @@
+import "../styles/Shop.css"
 import React from 'react';
 import { useState, useEffect } from "react";
 
@@ -19,7 +20,7 @@ function Shop(props) {
 
     const loadProducts = products.map((product, idx) => {
         return (
-            <div className="ProductList" key={idx}>
+            <div className="ProductCard" key={idx}>
                 <h2>{product.name}</h2>
                 <img className="product-images" src={product.image} alt={product.name}></img>
                 <h4>{`$${product.price}`}</h4>
@@ -29,9 +30,12 @@ function Shop(props) {
     })
 
   return (
-    <div>
-        <h1>Shop</h1>
-        {loadProducts}
+    <div className="ShopPage">
+        <h1>SHOP</h1>
+        <div className="ShopContainer">
+            {loadProducts}
+        </div>
+        
     </div>
   )
 }
