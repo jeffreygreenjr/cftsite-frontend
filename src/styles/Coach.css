@@ -16,7 +16,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
+    background-color: white;
     min-height: 300px;
     width: 250px;
     margin: 5%;
@@ -29,7 +30,16 @@
     transform: scale(105%);
 }
 
+.CoachName {
+    margin: 5% auto;
+    font-weight: 600;
+}
+
 .coach-images {
     width: 100px;
     min-height: 150px;
+}
+
+.coach-body {
+    margin: 5% auto;
 }

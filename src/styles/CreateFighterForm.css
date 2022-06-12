@@ -1,0 +1,36 @@
+.CreateFighterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CreateForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f {
+    width: 300px;
+    margin: 5px;
+}
+
+.submitbutton {
+    border-color: red;
+    background-color: red;
+    color: white;
+    margin: 5px;
+}
+
+.submitbutton:hover {
+    border-color: rgb(250, 53, 53);
+    background-color: rgb(250, 53, 53);
+    
+}
+
+.submitbutton:active {
+    border-color: red;
+    background-color: red;
+    transform: translateY(5px)
+}

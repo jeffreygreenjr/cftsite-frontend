@@ -26,6 +26,13 @@
 .ClassCard:hover {
     opacity: 1;
     transform: scale(105%);
+    background-color: red;
+    color: white;
+}
+
+.ClassIdName {
+    margin: 1% auto;
+    font-weight: 600;
 }
 
 .class-images {

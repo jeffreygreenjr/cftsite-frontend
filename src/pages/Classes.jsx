@@ -22,7 +22,10 @@ function Classes(props) {
         return (
             <div className="ClassCard" key={idx}>
                 <img className="class-images" src={classId.image} alt={classId.name}></img>
-                <h2>{classId.name}</h2>
+                <div className="ClassIdName">
+                    <h2>{classId.name}</h2>
+                </div>
+                
                 <h3>{classId.schedule}</h3>
             </div>
         )

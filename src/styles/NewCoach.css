@@ -1,0 +1,8 @@
+.CreateNewCoachPage {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 98vh;
+    justify-content: center;
+    flex-direction: column;
+}

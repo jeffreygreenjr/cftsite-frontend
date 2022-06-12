@@ -13,7 +13,9 @@
 }
 
 .ProductCard {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     min-height: 300px;
@@ -26,6 +28,11 @@
 .ProductCard:hover {
     opacity: 1;
     transform: scale(105%);
+}
+
+.ProductName {
+    margin: 5% auto;
+    font-weight: 600;
 }
 
 .product-images {

@@ -21,7 +21,9 @@ function Coaches(props) {
     const loadCoaches = coaches.map((coach, idx) => {
         return (
             <div className="CoachCard" key={idx}>
-                <h2>{coach.name}</h2>
+                <div className="CoachName">
+                    <h2>{coach.name}</h2>  
+                </div>
                 <img className="coach-images" src={coach.image} alt={coach.name}></img>
                 <div className="coach-body">
                     <h3>{`Classes: ${coach.teaches}`}</h3>

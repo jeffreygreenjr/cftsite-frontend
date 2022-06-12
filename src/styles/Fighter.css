@@ -2,6 +2,15 @@
     border: 1px solid red;
 } */
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 .FightersPage {
     margin-top: 150px;
     display: flex;
@@ -20,10 +29,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
+    background-color: white;
     min-height: 300px;
     width: 250px;
-    margin: 5%;
+    margin: 5% 2%;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
     opacity: .9;
 }
@@ -31,6 +41,11 @@
 .FighterCard:hover {
     opacity: 1;
     transform: scale(105%);
+}
+
+.FighterName {
+    margin: 5% auto;
+    font-weight: 600;
 }
 
 .fighter-images {
