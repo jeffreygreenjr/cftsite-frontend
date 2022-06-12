@@ -1,6 +1,7 @@
 import "../styles/Shop.css"
 import React from 'react';
 import { useState, useEffect } from "react";
+import ShopForm from '../components/ShopForm'
 
 function Shop(props) {
 
@@ -36,6 +37,9 @@ function Shop(props) {
         <h1>SHOP</h1>
         <div className="ShopContainer">
             {loadProducts}
+        </div>
+        <div className="ShopFormContainer">
+            <ShopForm />
         </div>
         
     </div>

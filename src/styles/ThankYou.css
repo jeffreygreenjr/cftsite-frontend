@@ -1,0 +1,21 @@
+.ThankYouPage {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ty-header {
+    font-size: 3em;
+}
+
+.ty-body {
+    font-size: 2em;
+    padding: 5% auto;
+}
+
+.ig-link {
+    padding: 5% auto;
+}

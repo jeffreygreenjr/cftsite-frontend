@@ -15,6 +15,7 @@ import NewCoach from "./pages/NewCoach";
 import Fighters from "./pages/Fighters";
 import NewFighter from "./pages/NewFighter";
 import Shop from "./pages/Shop";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/fighters" element={< Fighters URL={URL} />} />
         <Route exact path="/fighters/create" element={< NewFighter URL={URL} />} />
         <Route exact path="/shop" element={< Shop URL={URL} />} />
+        <Route exact path="/thankyou" element={< ThankYou URL={URL} />} />
       </Routes>
       <Footer />
     </div>
