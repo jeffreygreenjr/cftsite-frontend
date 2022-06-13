@@ -22,9 +22,9 @@ import ThankYou from "./pages/ThankYou";
 function App() {
 
   // HEROKU URL FOR MY BACKEND
-  const URL = "http://localhost:4000/"
-  const URL2 = "http://localhost:4000/fighters/create"
-  const URL3 = "http://localhost:4000/fighters/"
+  const URL = "https://cftsite-backend.herokuapp.com/"
+  const URL2 = "https://cftsite-backend.herokuapp.com/fighters/create"
+  const URL3 = "https://cftsite-backend.herokuapp.com/fighters/"
   
 
     // CREATE STATE TO HOLD FIGHTER DATA
