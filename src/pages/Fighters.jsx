@@ -24,7 +24,7 @@ function Fighters(props) {
         return (
             
             <div className="FighterCard" key={idx}>
-                <Link to={`/fighters/${fighter._id}`}>
+                <Link className="fighterLink" to={`/fighters/${fighter._id}`}>
                 <div className="FighterName">
                     <h2>{fighter.name}</h2>
                 </div>
