@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/ThankYou.css"
 import { BsInstagram } from "react-icons/bs";
 
-function ThankYou() {
+function ThankYou(props) {
   return (
     <div className="ThankYouPage">
         <div className="ty-heading">
