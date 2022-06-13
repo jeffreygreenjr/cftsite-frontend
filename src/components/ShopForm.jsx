@@ -1,9 +1,14 @@
 import "../styles/ShopForm.css"
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function ShopForm(props) {
 
+  const navigate = useNavigate();
 
+  const handleSubmit = () =>{
+    navigate('/thankyou')
+}
 
   return (
     <div className="ShopFormDiv">
