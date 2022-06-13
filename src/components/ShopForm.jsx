@@ -10,7 +10,7 @@ function ShopForm() {
         <h3 className="FormTitle">Inquiry Form</h3>
         <form className="ShopForm" action="https://formsubmit.co/mrjeffreygreen@gmail.com" method="POST">
             <input className="s subject" type="hidden" name="_subject" value="New CFT Inquiry"/>
-            <input className="s next" type="hidden" name="_next" value="http://localhost:3000/thankyou"/>
+            <input className="s next" type="hidden" name="_next" value="https://chicagofightteam.netlify.app/thankyou"/>
             <input className="s name" type="text" name="name" placeholder="Full Name" required/>
             <input className="s email" type="email" name="email" placeholder="Your Email" required/>
             <input className="s phone" type="phone" name="phone" placeholder="Your Phone Number" required/>
