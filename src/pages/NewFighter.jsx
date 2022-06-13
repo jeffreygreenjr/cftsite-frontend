@@ -2,10 +2,13 @@ import "../styles/NewFighter.css"
 import React from 'react'
 import CreateFighterForm from '../components/CreateFighterForm'
 import {useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function NewFighter(props) {
 
   console.log(props.getFighterData)
+
+  const navigate = useNavigate()
 
   const[newFighter, setNewFighter] = useState({
     name: "",
@@ -40,7 +43,7 @@ function handleSubmit(e) {
         competitiontype: "",
         promotions: ""
     })
-    // console.log(setNewFighter)
+    navigate('/fighters')
     console.log(newFighter)
 }
 
