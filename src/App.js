@@ -20,7 +20,7 @@ import ThankYou from "./pages/ThankYou";
 function App() {
 
   // HEROKU URL FOR MY BACKEND
-  const URL = "http://localhost:4000/"
+  const URL = "https://cftsite-backend.herokuapp.com/"
 
   return (
     <div className="App">
@@ -37,7 +37,7 @@ function App() {
         <Route exact path="/shop" element={< Shop URL={URL} />} />
         <Route exact path="/thankyou" element={< ThankYou URL={URL} />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

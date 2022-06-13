@@ -16,8 +16,8 @@
 @media screen and (max-width: 600px) {
 
     .HomePage {
-        margin-top: 150px;
-        height: 78vh;
+        /* margin-top: 125px; */
+        height: 75vh;
         width: 100%;
         display: flex;
         justify-content: center;
