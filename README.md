@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# CHICAGO FIGHT TEAM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In my final unit of my Software Engineering Immersive bootcamp, I developed and deployed a full-stack MERN application. The purpose of this web application is to serve as a library of information to all things related to a mixed martial arts gym based in the Chicagoland area. As always, responsive design was taken into consideration, so enjoy this application accross all devices.
 
-## Available Scripts
+## Screenshots
+![Screen Shot 2022-06-13 at 8 27 19 AM](https://user-images.githubusercontent.com/102068506/173368749-1d805698-a0a9-4ff9-98d1-93766f022007.png)
+![Screen Shot 2022-06-13 at 8 26 50 AM](https://user-images.githubusercontent.com/102068506/173368774-78b8a4e7-79b4-46ef-9174-ffa00e3559a7.png)
+![Screen Shot 2022-06-13 at 8 51 47 AM](https://user-images.githubusercontent.com/102068506/173368911-bbc6ab97-ce38-407d-a82c-73e5352792d2.png)
+![Screen Shot 2022-06-13 at 8 25 49 AM](https://user-images.githubusercontent.com/102068506/173368946-c62a03cd-ff77-4928-88d2-6bae2d587d9b.png)
+![Screen Shot 2022-06-13 at 8 26 14 AM](https://user-images.githubusercontent.com/102068506/173368964-b5cdd0c5-c804-4c88-a7c6-789e09a1880f.png)
+![Screen Shot 2022-06-13 at 8 26 31 AM](https://user-images.githubusercontent.com/102068506/173368979-58fbf44c-dd45-426f-b468-2d809c94281c.png)
+![Screen Shot 2022-06-13 at 8 29 31 AM](https://user-images.githubusercontent.com/102068506/173368995-273f0fb8-8714-461b-b925-a545b363903d.png)
 
-In the project directory, you can run:
+### Technologies Used
+MonogoDB, Monogoose, Express, React, Node.js
 
-### `npm start`
+#### Getting Started
+To browse this application, please click on the follow link: https://chicagofightteam.herokuapp.com/. You will be loaded into the landing page. From there, you have many options to choose from via the nav bar. You can learn about the gym in the about page. You can view the coaches, classes, and fighters at the gym as well as the products available for purchase via the shop page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Next Steps/Future Enhancements
+Because I will be delivering this to a client, there are many updates/changes that will be needed as the gym's personnel changes. While I have the client-side functionality built, I still plan to implement updates the library of information displayed for viewers. In the future, I'd also like to implement some styling updates to make the application more user friendly and interractive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### Support
+For any questions regarding this web application, please email me directly at mrjeffreygreen@gmail.com
