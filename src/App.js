@@ -24,6 +24,8 @@ function App() {
   // HEROKU URL FOR MY BACKEND
   const URL = "http://localhost:4000/"
   const URL2 = "http://localhost:4000/fighters/create"
+  const URL3 = "http://localhost:4000/fighters/"
+  
 
     // CREATE STATE TO HOLD FIGHTER DATA
     const [fighters, setFighters] = useState([])
@@ -40,7 +42,7 @@ function App() {
     }
 
     const createFighter = async(fighter) => {
-      await fetch(URL2,{
+      await fetch(URL2 ,{
           method:'POST',
           headers:{
               'Content-Type': 'application/json',
@@ -49,6 +51,25 @@ function App() {
       })
       getFighterData()  
   }
+
+  const editFighter = async(fighter, id) => {
+    await fetch(URL3 + id,{
+        method:'PUT',
+        headers:{
+            'Content-Type': 'application/json',
+        },
+        body:JSON.stringify(fighter)
+    })
+    getFighterData()  
+}
+
+const deleteFighter = async(fighter, id) => {
+  await fetch(URL3 + id,{
+      method:'DELETE',
+      body:JSON.stringify(fighter)
+  })
+  getFighterData()  
+}
 
   // useEffect(() => {
   //   createFighter()
@@ -67,7 +88,7 @@ function App() {
         <Route exact path="/fighters" element={< Fighters URL={URL} />} />
         <Route exact path="/fighters/create" element={< NewFighter getFighterData={getFighterData}
         createFighter={createFighter} />} />
-        <Route exact path="/fighters/:id" element={< FighterShow URL={URL} fighters={fighters} getFighterData={getFighterData} />} />
+        <Route exact path="/fighters/:id" element={< FighterShow URL={URL} fighters={fighters} getFighterData={getFighterData} editFighter={editFighter} deleteFighter={deleteFighter} />} />
         <Route exact path="/shop" element={< Shop URL={URL} />} />
         <Route exact path="/thankyou" element={< ThankYou URL={URL} />} />
       </Routes>
