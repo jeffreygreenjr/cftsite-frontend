@@ -2,7 +2,7 @@ import "../styles/CreateFighterForm.css"
 import React from 'react'
 import { useState } from 'react'
 
-function CreateFighterForm() {
+function CreateFighterForm({props}) {
 
     const[newFighter, setNewFighter] = useState({
         name: "",
@@ -16,29 +16,31 @@ function CreateFighterForm() {
         promotions: ""
     })
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        (newFighter)
-        setNewFighter({
-            name: e.target.value.name,
-            nickname: e.target.value.nickname,
-            stance: e.target.value.stance,
-            weight: e.target.value.weight,
-            weightclass: e.target.value.weightclass,
-            record: e.target.value.record,
-            image: e.target.value.image,
-            competitiontype: e.target.value.competitiontype,
-            promotions: e.target.value.promotions,
-        })
-        console.log(e.target.value)
-    }
-
     function handleChange(e) {
         setNewFighter({...newFighter,
            [e.target.name]: e.target.value
         })
-        console.log(e.target.value)
+        // console.log(e.target.value)
     }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        props.createFighter(newFighter)
+        setNewFighter({
+            name: "",
+            nickname: "",
+            stance: "",
+            weight: "",
+            weightclass: "",
+            record: "",
+            image: "",
+            competitiontype: "",
+            promotions: ""
+        })
+        // console.log(setNewFighter)
+        console.log(newFighter)
+    }
+
 
   return (
     <div className="CreateFighterForm">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "../styles/Fighter.css";
+
 
 function Fighters(props) {
 
@@ -20,11 +22,12 @@ function Fighters(props) {
 
     const loadFighters = fighters.map((fighter, idx) => {
         return (
+            
             <div className="FighterCard" key={idx}>
+                <Link to={`/fighters/${fighter._id}`}>
                 <div className="FighterName">
                     <h2>{fighter.name}</h2>
                 </div>
-                
                 <img className="fighter-images" src={fighter.image} alt={fighter.name}></img>
                 <div className="f-card-body">
                     <h3>{`"${fighter.nickname}"`}</h3>
@@ -33,6 +36,7 @@ function Fighters(props) {
                     <h5>{fighter.weightclass}</h5>
                     <h5>{fighter.record}</h5>
                 </div>
+                </Link>
             </div>
         )
     })
