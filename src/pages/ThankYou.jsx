@@ -6,11 +6,10 @@ function ThankYou() {
   return (
     <div className="ThankYouPage">
         <div className="ty-heading">
-            <h1 className="ty-header">Thank you for your submission.</h1>
+            <h1 className="ty-header">Thank you for your inquiry.</h1>
         </div>
         <div className="ty-body">
-            <h2>Follow us on Instagram to stay up to date</h2>
-            <a className="ig-link" href="https://www.instagram.com/chicagofightteam/">< BsInstagram /></a>
+            <h2>Follow us on <a className="ig-hyperlink" href="https://www.instagram.com/chicagofightteam/">instagram</a> to stay up to date</h2>
         </div>
 
     </div>

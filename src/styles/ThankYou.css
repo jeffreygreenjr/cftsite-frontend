@@ -12,10 +12,11 @@
 }
 
 .ty-body {
-    font-size: 2em;
-    padding: 5% auto;
+    font-size: 1.5em;
+    padding: 3% auto;
 }
 
-.ig-link {
-    padding: 5% auto;
+.ig-hyperlink {
+    color: red;
+    text-decoration: none;
 }

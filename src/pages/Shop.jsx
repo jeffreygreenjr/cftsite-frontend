@@ -22,7 +22,7 @@ function Shop(props) {
     const loadProducts = products.map((product, idx) => {
         return (
             <div className="ProductCard" key={idx}>
-                <div ClassName="ProductName">
+                <div className="ProductName">
                     <h2>{product.name}</h2>
                 </div>
                 <img className="product-images" src={product.image} alt={product.name}></img>
